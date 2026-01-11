@@ -2,8 +2,16 @@
 layout: default
 ---
 
+<style>
+  /* Esto elimina el espacio que deja el nombre "Pedro López" por debajo */
+  header.site-header, .site-header {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+</style>
+
 <div class="page-content" style="padding-top: 0; margin-top: 0;">
-  <h1 style="margin-top: 0;">
+  <h1 style="margin-top: 0; padding-top: 0;">
     {{ page.title }}
   </h1>
   <article>
