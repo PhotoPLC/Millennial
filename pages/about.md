@@ -4,4 +4,4 @@ title: Sobre mí
 permalink: /about
 ---
 
-Millennial is a minimalist Jekyll theme. The purpose of this theme is to provide a simple, clean, content-focused publishing platform for your publication site or blog. You can find everything you need to get started under documentation. For more information on how to install and use this theme, check out [the documentation]({{ site.github.url }}{% post_url 2016-10-10-getting-started %}).
+Natural de Pinoso (Alicante) inicia sus estudios de trompeta a la edad de 7 años en la Escuela de música Sociedad Unión Lírica Pinosense y posteriormente ingresa en el Conservatorio Profesional de Elda. En el año 2025 continua sus estudios superiores en el Conservatorio Superior de Música “Joaquín Rodrigo”.  [the documentation]({{ site.github.url }}{% post_url 2016-10-10-getting-started %}).
