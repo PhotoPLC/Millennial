@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Documentos
+title: documentation
 category: documentation
 permalink: /documentation
 ---
