@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Portafolio"
-author: "Paul Le"
+author: "Pedro Lopez"
 categories: sample
 tags: [sample]
 image: arctic-1.jpg
