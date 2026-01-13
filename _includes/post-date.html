@@ -1,23 +1,15 @@
 <span class="post-date">
-  {{ site.data.settings.post_date_prefix }}
+  {% if site.data.settings.post_date_prefix %}
+    {{ site.data.settings.post_date_prefix }}
+  {% endif %}
   
-  {% assign d = page.date | date: "%-d" %}
-  {% assign m = page.date | date: "%m" %}
-
-  {{ d }} de 
-  {% case m %}
-    {% when '01' %}enero
-    {% when '02' %}febrero
-    {% when '03' %}marzo
-    {% when '04' %}abril
-    {% when '05' %}mayo
-    {% when '06' %}junio
-    {% when '07' %}julio
-    {% when '08' %}agosto
-    {% when '09' %}septiembre
-    {% when '10' %}octubre
-    {% when '11' %}noviembre
-    {% when '12' %}diciembre
+  {{ page.date | date: "%-d" }} de 
+  {% assign mes = page.date | date: "%m" %}
+  {% case mes %}
+    {% when '01' %}enero {% when '02' %}febrero {% when '03' %}marzo
+    {% when '04' %}abril {% when '05' %}mayo {% when '06' %}junio
+    {% when '07' %}julio {% when '08' %}agosto {% when '09' %}septiembre
+    {% when '10' %}octubre {% when '11' %}noviembre {% when '12' %}diciembre
   {% endcase %}
   de {{ page.date | date: "%Y" }}
   
