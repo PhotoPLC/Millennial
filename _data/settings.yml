@@ -8,7 +8,7 @@ google-ID: ''
 
 menu:
 - {name: 'Proyectos',  url: 'facts'}
-- {name: 'Learning Resources', url: 'resources'}
+- {name: 'Biblioteca', url: 'resources'}
 - {name: 'Portafolio',       url: 'sample-posts'}
 - {name: 'Documentos',      url: 'documentation'}
 - {name: 'Pedro López',              url: 'about'}
