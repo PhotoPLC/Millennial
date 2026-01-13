@@ -4,4 +4,7 @@ title: Contacto
 permalink: /contact
 ---
 
-This theme is completely free and open source software. You may use it however you want, as it is distributed under the [MIT License](http://choosealicense.com/licenses/mit/). If you are having any problems, any questions or suggestions, feel free to [tweet at me](https://twitter.com/intent/tweet?text=My%question%about%Millennial%is:%&amp;via=paululele), or [file a GitHub issue](https://github.com/lenpaul/Millennial/issues/new).
+¿Tienes una idea en mente, una duda o simplemente quieres saludar? Me apasiona conectar con personas nuevas y explorar cómo podemos colaborar. No seas tímido/a, escríbeme y tomémonos un café (virtual o real) para darle forma a tus planes.
+
+EMAIL: ped_lopcar.alu.iseacv.gva.es
+
