@@ -7,7 +7,7 @@ disqus:
 google-ID: ''
 
 menu:
-- {name: 'Empezamos?',  url: 'facts'}
+- {name: 'Web',  url: 'facts'}
 - {name: 'Learning Resources', url: 'resources'}
 - {name: 'Portafolio',       url: 'sample-posts'}
 - {name: 'Documentation',      url: 'documentation'}
