@@ -1,10 +1,15 @@
 ---
 layout: post
-title: "About the Author"
-author: "Paul Le"
+title: "Proyectos"
+date: 23-01-2026
+author: "Pedro López"
 categories: facts
 tags: [sample]
 image: cuba-2.jpg
 ---
 
-Hi there! I'm Paul. I’m a physics major turned programmer. Ever since I first learned how to program while taking a scientific computing for physics course, I have pursued programming as a passion, and as a career. Check out [my personal website](https://www.lenpaul.com/) for more information on my other projects (including more Jekyll themes!), as well as some of my writing.
+## Mis próximos proyectos
+
+Aquí podrás ver en qué estoy trabajando actualmente. Mi idea es seguir explorando nuevas formas de [lo que haces, ej: diseñar/ayudar a otros/crear contenido] y compartir los resultados muy pronto.
+
+¡Echa un vistazo de vez en cuando para no perderte las novedades!
