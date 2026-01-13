@@ -10,7 +10,7 @@ menu:
 - {name: 'Proyectos',  url: 'facts'}
 - {name: 'Learning Resources', url: 'resources'}
 - {name: 'Portafolio',       url: 'sample-posts'}
-- {name: 'Documento',      url: 'documentation'}
+- {name: 'Documentos',      url: 'documentation'}
 - {name: 'Pedro López',              url: 'about'}
 - {name: 'Contacto',            url: 'contact'}
 
