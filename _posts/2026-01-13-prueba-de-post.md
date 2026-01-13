@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Mi web"
+title: "Mi primer post"
 date: 2026-01-13
 author: "Pedro López"
 categories: documentation
