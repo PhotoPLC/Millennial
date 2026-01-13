@@ -1,7 +1,19 @@
-_site
-Gemfile.lock
-.sass-cache
+# --- Carpeta de salida (GitHub la genera sola) ---
+_site/
+
+# --- Basura de Jekyll (Evita errores de compilación) ---
+.jekyll-cache/
 .jekyll-metadata
+.sass-cache/
+
+# --- Archivos de sistema ---
 .DS_Store
-.jekyll-cache
+Thumbs.db
+
+# --- Archivos de Ruby (Opcional) ---
+vendor/
+.bundle/
 *.gem
+
+# NOTA: NO hemos puesto Gemfile.lock aquí. 
+# Para GitHub Pages es mejor SUBIRLO.
