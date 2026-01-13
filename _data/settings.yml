@@ -29,6 +29,6 @@ pagination:
 
 sharing_button_prompt: 'Se libre de compartir!'
 
-related_posts: 'You may also enjoy...'
+related_posts: 'Tal vez te interese...'
 
-post_date_prefix: 'Written on'
+post_date_prefix: 'Escrito el'
