@@ -9,7 +9,7 @@ google-ID: ''
 menu:
 - {name: 'Empezamos?',  url: 'facts'}
 - {name: 'Learning Resources', url: 'resources'}
-- {name: 'Sample Posts',       url: 'sample-posts'}
+- {name: 'Portafolio',       url: 'sample-posts'}
 - {name: 'Documentation',      url: 'documentation'}
 - {name: 'Pedro López',              url: 'about'}
 - {name: 'Contacto',            url: 'contact'}
