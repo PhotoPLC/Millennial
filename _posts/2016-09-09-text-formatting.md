@@ -8,5 +8,6 @@ tags: [sample]
 image: music2.jpg
 image1: music4.jpg
 ---
-
+<div class="featured-image"> 
 <img src="https://pedro.lopezcarrillo.com/assets/img/music2.jpg">
+</div> 
