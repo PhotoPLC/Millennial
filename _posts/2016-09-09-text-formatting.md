@@ -6,5 +6,4 @@ author: "Pedro Lopez"
 categories: sample
 tags: [sample]
 image: music2.jpg
-image2: music1.jpg
 ---
