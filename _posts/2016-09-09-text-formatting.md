@@ -9,7 +9,7 @@ image: arctic-1.jpg
 ---
 
 # CONSTRUYENDO...
-<img src="https://pedro.lopezcarrillo.com/assets/img/music1.jpg">
+
 
 
 
