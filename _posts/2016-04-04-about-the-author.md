@@ -5,7 +5,7 @@ date: 26-01-13
 author: "Pedro López"
 categories: facts
 tags: [sample]
-image: cuba-2.jpg
+image: music3.jpg
 ---
 
 ## Mis próximos proyectos
