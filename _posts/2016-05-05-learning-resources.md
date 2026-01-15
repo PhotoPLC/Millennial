@@ -5,7 +5,7 @@ date: 2026-01-13
 author: "Pedro Lopez"
 categories: resources
 tags: [documentation,sample]
-image: arctic-2.jpg
+image: music4.jpg
 ---
 ## Lectura 
 
