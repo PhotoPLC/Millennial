@@ -9,3 +9,4 @@ image: music2.jpg
 image1: music4.jpg
 ---
 
+<img src="https://pedro.lopezcarrillo.com/assets/img/music2.jpg">
