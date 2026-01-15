@@ -9,6 +9,7 @@ image: arctic-1.jpg
 ---
 
 # CONSTRUYENDO...
+<img src="assets/music1.jpg" alt="Mi foto de perfil">
 
 
 
