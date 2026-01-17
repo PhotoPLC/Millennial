@@ -7,7 +7,7 @@ disqus:
 google-ID: ''
 
 menu:
-- {name: 'Proyectos',  url: 'facts'}
+- {name: 'Proyectos',  url: 'proyectos'}
 - {name: 'Biblioteca', url: 'resources'}
 - {name: 'Portafolio',       url: 'sample-posts'}
 - {name: 'Documentos',      url: 'documentation'}
