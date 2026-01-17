@@ -9,7 +9,7 @@ google-ID: ''
 menu:
 - {name: 'Proyectos',  url: 'proyectos'}
 - {name: 'Biblioteca', url: 'biblioteca'}
-- {name: 'Portafolio',       url: 'sample-posts'}
+- {name: 'Portafolio',       url: 'galeria'}
 - {name: 'Documentos',      url: 'documentation'}
 - {name: 'Pedro López',              url: 'about'}
 - {name: 'Contacto',            url: 'contact'}
