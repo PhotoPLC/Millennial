@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Learning Resources
+title: Biblioteca
 category: resources
 permalink: /biblioteca
 ---
