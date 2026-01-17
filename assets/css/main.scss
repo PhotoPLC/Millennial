@@ -25,5 +25,10 @@ $pinterest-color: #bd081c;
 $medium-color: #00AB6C;
 $codepen-color: black;
 $rss-color: #ff6600;
+/* Esto justificará todos tus párrafos automáticamente */
+p {
+  text-align: justify;
+  text-justify: inter-word; /* Mejora el espaciado entre palabras */
+}
 
 @import "-sections-dir";
