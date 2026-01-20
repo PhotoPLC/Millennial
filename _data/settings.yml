@@ -16,9 +16,8 @@ menu:
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
-<a href="https://www.instagram.com/pedroolpzzz_/" data-umami-event="icon: 'instagram'">Instagram</a>
-- {icon: 'instagram', link:  'https://www.instagram.com/pedroolpzzz_/'}
-- {icon: 'envelope', link:   'mailto:ped_lopcar@alu.iseacv.gva.es'}
+- {icon: 'instagram', link: 'https://www.instagram.com/pedroolpzzz_/', event: 'clic-instagram'}
+- {icon: 'envelope', link: 'mailto:ped_lopcar@alu.iseacv.gva.es', event: 'clic-email'}
 
 # - {icon: 'rss-square', link: 'rss-feed.xml'}
 
