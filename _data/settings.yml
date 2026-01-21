@@ -23,9 +23,8 @@ social:
 
 # Customize site text
 pagination:
-
-next_page: 'Nuevo'
-previous_page: 'Antiguo'
+  next_page: 'Anterior'
+  previous_page: 'Siguiente'
 
 
 sharing_button_prompt: 'Se libre de compartir!'
