@@ -13,10 +13,17 @@ title: Home
   %}
 {% endif %}
 
-{% for post in paginator.posts %}
-  {% include featured-post.html %}
-{% endfor %}
+<div class="container">
+  <div class="content-wrapper">
+    
+    <div class="home">
+      {% for post in paginator.posts %}
+        {% include featured-post.html %}
+      {% endfor %}
+    </div>
 
+    <div class="pagination">
+       </div>
 <!-- Pagination links -->
 <div class="pagination">
 {% if paginator.previous_page %}
