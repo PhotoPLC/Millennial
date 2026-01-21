@@ -3,6 +3,16 @@ layout: default
 title: Home
 ---
 
+{% if paginator.page == 1 %}
+  {% include hero.html 
+     title="Bienvenido a mi Blog" 
+     subtitle="Explora mis pensamientos sobre desarrollo y diseño." 
+     image="/assets/images/hero-bg.jpg"
+     button_text="Ver Proyectos"
+     button_link="/proyectos" 
+  %}
+{% endif %}
+
 {% for post in paginator.posts %}
   {% include featured-post.html %}
 {% endfor %}
