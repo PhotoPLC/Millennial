@@ -1,0 +1,49 @@
+<section class="hero-section" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{ include.image | relative_url }}');">
+  <div class="hero-content">
+    <h1>{{ include.title }}</h1>
+    <p>{{ include.subtitle }}</p>
+    {% if include.button_link %}
+      <a href="{{ include.button_link | relative_url }}" class="hero-button">
+        {{ include.button_text | default: "Leer más" }}
+      </a>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  .hero-section {
+    height: 80vh; /* Altura de la portada */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Esto crea el efecto de fondo fijo al hacer scroll */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+  }
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+  }
+  .hero-content p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+  }
+  .hero-button {
+    background: #ff4b2b; /* Cambia al color de tu marca */
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .hero-button:hover {
+    background: #ff416c;
+    transform: scale(1.05);
+  }
+</style>
