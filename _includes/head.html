@@ -1,11 +1,11 @@
 <head>
   <title>
-    {% if page.title == "Home" %}
-      {{ site.title }} | {{ site.description }}
-    {% else %}
-      {{ page.title }} | {{ site.title }}
-    {% endif %}
-  </title>
+  {% if page.url == "/" or page.url == "/index.html" %}
+    Pedro López | Músico y Trompetista profesional
+  {% else %}
+    {{ page.title }} | Pedro López
+  {% endif %}
+</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <link rel="stylesheet" href="{{ site.github.url }}/assets/css/main.css">
