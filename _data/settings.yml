@@ -8,7 +8,7 @@ google-ID: ''
 
 menu:
 - {name: 'Proyectos',  url: 'proyectos'}
-- {name: 'Biblioteca', url: 'biblioteca'}
+#- {name: 'Biblioteca', url: 'biblioteca'}
 - {name: 'Portafolio',       url: 'galeria'}
 # - {name: 'Documentos',      url: 'documentation'}
 - {name: 'Pedro López',              url: 'about'}
