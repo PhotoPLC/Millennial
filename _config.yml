@@ -10,7 +10,7 @@ permalink:           /:title
 plugins:             [jekyll-paginate, jekyll-sitemap, jekyll-feed, jekyll-seo-tag]
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           "Pedro López | Músico profesional y trompetista especializado en música clásica, jazz y eventos.""
+title:		           "Pedro López | Músico profesional y trompetista especializado en música clásica, jazz y eventos."
 description:	       "Pedro López | Músico profesional y trompetista especializado en música clásica, jazz y eventos."
 # author:              "Pedro Lopez"
 
