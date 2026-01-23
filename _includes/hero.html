@@ -59,4 +59,24 @@
     background: #ff416c;
     transform: scale(1.05);
   }
+  .hero-button:hover {
+    background: #e63e1f;
+    transform: translateY(-3px); /* Efecto de flotado */
+    box-shadow: 0 6px 20px rgba(255, 75, 43, 0.5);
+  }
+
+  /* Ajuste para monitores ultra-anchos */
+  @media (min-width: 1800px) {
+    .hero-section { padding-left: 15%; }
+  }
+
+  /* Ajuste básico para que en móviles no se rompa nada */
+  @media (max-width: 768px) {
+    .hero-section {
+      background-attachment: scroll; /* Evita tirones en móvil */
+      padding-left: 20px;
+      height: 70vh;
+    }
+    .hero-content h1 { font-size: 2.2rem; }
+  }
 </style>
