@@ -10,21 +10,15 @@ image: max.gif
 # Bienvenidos a mi Blog
 
 <p style="text-align: justify;">
-Existe una teoría que dice que el mundo no está hecho de átomos, sino de vibraciones. A mis 20 años, he decidido que mi carrera 
-profesional sea el estudio de esas vibraciones: tanto las que salen por un altavoz como las que mueven los hilos de un proyecto cultural.
-</p>
-<p>
-Ni solo técnico, ni solo gestor
-</p>
-<p>
-Mucha gente cree que el sonido es solo mover faders en una mesa de mezclas y que la gestión cultural es solo rellenar hojas de cálculo. Yo lo veo al revés. Para mí, producir arte es como ecualizar una canción:
-Si te pasas de graves, el proyecto se vuelve pesado y no avanza.
-Si te faltan agudos, le falta brillo y nadie lo nota.
-</p>
-<p>
-Mi objetivo es encontrar el equilibrio perfecto entre la técnica pura y la estrategia que hace que una idea llegue al público.
-El aprendizaje como motor (y no como meta)
-</p>
-<p>
-No estoy aquí para dar lecciones, sino para documentar un viaje. Estoy en esa etapa donde cada error en el estudio es una lección de física y cada fallo de organización es un máster en resolución de problemas. Este blog es mi laboratorio personal. Aquí voy a diseccionar desde cómo capturar la esencia de un grupo en una grabación hasta cómo se levanta un festival desde cero sin morir en el intento.
-</p>
+<p> Dicen que el mundo no está hecho de átomos, sino de vibraciones. A mis 20 años, no sé si es una verdad absoluta, pero es mi realidad diaria. Mi carrera ahora mismo es el estudio de esas frecuencias: desde el aire que muevo al soplar mi trompeta hasta la señal que intento domar en una interfaz de audio. </p>
+
+<p> No soy un ingeniero con años de experiencia ni tengo el camino resuelto. Soy alguien que está en medio de la carrera, descubriendo que capturar un sonido es mucho más que pulsar "record" (grabar). Para mí, trabajar el audio es como tocar la trompeta: si no hay aire no hay sonido, si te pasas de presión todo satura y, si no escuchas lo que hay alrededor, terminas desafinando. </p>
+
+<p> Estoy aprendiendo a ecualizar mi entorno de la misma forma que una mezcla: buscando ese punto donde los graves tienen peso pero no ensucian, y donde los agudos brillan sin que lleguen a molestar. Es un equilibrio difícil que todavía estoy intentando descifrar entre apuntes, cables y horas de ensayo. </p>
+
+<p> No tengo un estudio profesional ni respuestas definitivas, así que este espacio es mi laboratorio personal. Aquí no vas a encontrar lecciones magistrales, sino el cuaderno de bitácora de alguien que está aprendiendo a base de probar. No busco la perfección, busco entender por qué las cosas vibran como vibran. </p>
+
+<p> Estoy en esa etapa donde cada error técnico me enseña más física que cualquier libro y cada nota pifiada es un recordatorio de que la técnica solo llega con las horas de vuelo. Aquí voy a diseccionar desde por qué una toma de trompeta suena ahogada según el micro, hasta cómo pelearse con la acústica de una habitación que no está hecha para grabar. </p>
+
+<p> "El universo está hecho de historias, no de átomos."
+— Muriel Rukeyser (The Speed of Darkness, 1968)</p>
