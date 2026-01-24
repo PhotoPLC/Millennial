@@ -67,23 +67,26 @@
     margin-bottom: 2rem;
   }
 
-  .hero-button {
-    background: #ff4b2b;
-    color: white !important;
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.3s ease;
-    display: inline-block;
-  }
+  ..hero-button {
+  background: transparent;
+  color: white !important;
+  padding: 12px 35px;
+  text-decoration: none;
+  border: 1.5px solid #d4af37; /* Borde bronce a juego con la cita */
+  border-radius: 4px; /* Menos redondeado = más profesional */
+  font-weight: 400;
+  letter-spacing: 2px; /* Espaciado entre letras */
+  text-transform: uppercase;
+  transition: 0.4s all;
+  display: inline-block;
+}
 
-  .hero-button:hover {
-    background: #e63e1f;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(255, 75, 43, 0.5);
-  }
+.hero-button:hover {
+  background: #d4af37;
+  color: #000 !important; /* Texto negro al pasar el mouse para contraste */
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
 
   /* Estilos de la cita */
   .hero-right-side {
