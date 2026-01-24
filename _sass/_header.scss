@@ -44,7 +44,7 @@
 /*
   Responsiveness with a dropdown menu
 */
-@media (min-width: $651px) {
+@media (min-width: 651px) {
   .dropbtn {
     display: none;
   }
@@ -52,7 +52,7 @@
     display: none;
   }
 }
-@media (max-width: $650px) {
+@media (max-width: 650px) {
   .menu-list {
     display: none;
   }
