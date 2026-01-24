@@ -31,13 +31,14 @@
 
 .menu-list {
   line-height: $header-thickness;
-  float: right;
+  float: none;
+  flex-wrap: nowrap; /* Evita que los botones se vayan abajo */
   display: flex;         /* Cambiamos a Flexbox para mejor control */
   padding-right: 10px;
 }
 
 .menu-link {
-  padding: 5px 6px;      /* Bajamos de 10px a 6px laterales para compactar */
+  padding: 5px 1vw;      /* Bajamos de 10px a 6px laterales para compactar */
   font-size: 14px;       /* Letra ligeramente más pequeña para laptops */
 }
 
