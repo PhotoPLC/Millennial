@@ -59,3 +59,9 @@ p {
     }
   }
 }
+html, body {
+  overflow-x: hidden; /* Corta cualquier cosa que sobresalga por la derecha */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
