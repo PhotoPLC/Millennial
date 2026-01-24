@@ -6,7 +6,7 @@
   box-shadow: 0 5px 6px -6px #bbb;
   z-index: 100;
 }
-@media (max-width: 650px) {
+@media (max-width: $container-width) {
   .site-header {
     min-height: 56px;
     width: 95vw;
@@ -20,11 +20,11 @@
   text-decoration: none;
 }
 .site-title {
-  font-size: 26px;       
+  font-size: 20px;       /* Bajamos de 26px para ganar espacio horizontal */
   font-weight: 400;
   line-height: 56px;
   margin: 0;
-  padding-left: 5px;
+  padding-left: 10px;
   float: left;
   white-space: nowrap;   /* IMPORTANTE: Evita que el título salte a dos líneas */
 }
@@ -32,20 +32,20 @@
 .menu-list {
   line-height: $header-thickness;
   float: right;
-  flex-wrap: nowrap; /* Evita que los botones se vayan abajo */
   display: flex;         /* Cambiamos a Flexbox para mejor control */
-  padding-right: 5px;
+  padding-right: 10px;
 }
 
 .menu-link {
-  padding: 10px 1vw;      /* Bajamos de 10px a 6px laterales para compactar */
+  padding: 5px 6px;      /* Bajamos de 10px a 6px laterales para compactar */
   font-size: 14px;       /* Letra ligeramente más pequeña para laptops */
 }
 
 /*
   Responsiveness with a dropdown menu
 */
-@media (min-width: 651px) {
+
+@media (min-width: $container-width) {
   .dropbtn {
     display: none;
   }
@@ -53,7 +53,7 @@
     display: none;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: $container-width) {
   .menu-list {
     display: none;
   }
