@@ -57,28 +57,32 @@
   }
 
   .hero-content h1 {
-    font-size: clamp(2.5rem, 5vw, 4.5rem);
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-  }
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 700;
+    letter-spacing: -1px; /* Títulos más compactos se ven mejor */
+    margin-bottom: 0.5rem;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3); /* Sombra mucho más suave */
+}
 
   .hero-content p {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-  }
+  font-size: 1.4rem;
+  font-weight: 300; /* Letra más fina para el subtítulo */
+  color: #cccccc;
+  margin-bottom: 2.5rem;
+}
 
   .hero-button {
-  background: transparent;
-  color: white !important;
-  padding: 12px 35px;
-  text-decoration: none;
-  border: 1.5px solid #d4af37; /* Borde bronce a juego con la cita */
-  border-radius: 4px; /* Menos redondeado = más profesional */
-  font-weight: 400;
-  letter-spacing: 2px; /* Espaciado entre letras */
-  text-transform: uppercase;
-  transition: 0.4s all;
-  display: inline-block;
+    background: transparent;
+    color: white !important;
+    padding: 12px 35px;
+    text-decoration: none;
+    border: 1.5px solid #d4af37; /* Borde bronce a juego con la cita */
+    border-radius: 4px; /* Menos redondeado = más profesional */
+    font-weight: 400;
+    letter-spacing: 2px; /* Espaciado entre letras */
+    text-transform: uppercase;
+    transition: 0.4s all;
+    display: inline-block;
 }
 
 .hero-button:hover {
