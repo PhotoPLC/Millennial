@@ -1,121 +1,73 @@
 <section class="hero-section" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('{{ include.image | relative_url }}');">
-  <div class="hero-content">
-    <h1>{{ include.title }}</h1>
-    <p>{{ include.subtitle }}</p>
-    {% if include.button_link %}
-      <a href="{{ include.button_link | relative_url }}" class="hero-button">
-        {{ include.button_text | default: "Leer más" }}
-      </a>
-    {% endif %}
-  </div>
   
-  <div class="hero-right-side">
+  <div class="hero-container">
+    
+    <div class="hero-content">
+      <h1>{{ include.title }}</h1>
+      <p>{{ include.subtitle }}</p>
+      {% if include.button_link %}
+        <a href="{{ include.button_link | relative_url }}" class="hero-button">
+          {{ include.button_text | default: "Leer más" }}
+        </a>
+      {% endif %}
+    </div>
+    
+    <div class="hero-right-side">
       <blockquote class="stravinsky-quote">
         <p>"La música es una arquitectura de sonidos; es el orden del tiempo y del espacio."</p>
         <footer>— Igor Stravinsky</footer>
       </blockquote>
     </div>
-  
-  </div>
-</section>
+    
+  </div> </section>
 
 <style>
   .hero-section {
-    height: 80vh; /* Altura de la portada */
-    width: 100vw;      /* Ocupa el 100% del ancho de la ventana */
+    height: 80vh;
+    width: 100vw;
     position: relative; 
-    left: 50%;         /* Lo mueve al centro */
+    left: 50%;
     right: 50%;
-    margin-left: -50vw; /* Lo expande hacia la izquierda */
+    margin-left: -50vw;
     margin-right: -50vw;
     background-size: cover;
     background-position: center;
-    flex-direction: column;
-    background-attachment: fixed !important; /* Esto crea el efecto de fondo fijo al hacer scroll */
-    background-repeat: no-repeat;
+    background-attachment: fixed !important;
     display: flex;
-    align-items: flex-start;
-    text-align: left;
+    align-items: center; /* Centra verticalmente */
     justify-content: center;
-    box-sizing: border-box; /* Esto hace que el padding se reste del interior, no que se sume al exterior */
-    padding-left: 80px;         /* Este valor lo despega del borde. Ajústalo hasta que te guste. */
-    color: white;
+    box-sizing: border-box;
+    color: white; /* Texto blanco */
+    background-color: #333; /* Color de respaldo gris oscuro por si falla la imagen */
     margin-bottom: 2rem;
+    overflow: hidden;
   }
+
+  /* Contenedor que organiza izquierda y derecha */
+  .hero-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    box-sizing: border-box;
+  }
+
+  .hero-content {
+    flex: 1; /* Ocupa espacio disponible */
+    text-align: left;
+  }
+
   .hero-content h1 {
-    font-size: clamp(2.5rem, 5vw, 4.5rem); /* Se ajusta entre 2.5 y 4.5 según el monitor */
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
-    text-align: left;
+    line-height: 1.1;
   }
+
   .hero-content p {
     font-size: 1.5rem;
+    margin-bottom: 2rem;
     max-width: 600px;
-    margin: 0 auto 2rem;
-    text-align: left;
- 
   }
-  .hero-button {
-    background: #ff4b2b; /* Cambia al color de tu marca */
-    color: white;
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    text-transform: uppercase;  /* Estilo más serio */
-    transition: 0.3s;
-  }
-  .hero-button:hover {
-    background: #ff416c;
-    transform: scale(1.05);
-  }
-  .hero-button:hover {
-    background: #e63e1f;
-    transform: translateY(-3px); /* Efecto de flotado */
-    box-shadow: 0 6px 20px rgba(255, 75, 43, 0.5);
-  }
- /* Lado derecho y cita */
-.hero-right-side {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.stravinsky-quote {
-  text-align: right;
-  max-width: 350px;
-  border-right: 3px solid #ff4b2b;
-  padding-right: 20px;
-  margin: 0;
-}
-
-.stravinsky-quote p {
-  font-size: 1.2rem;
-  font-style: italic;
-  margin-bottom: 8px;
-}
-
-.stravinsky-quote footer {
-  font-size: 0.9rem;
-  opacity: 0.8;
-}
- .hero-right-side {
-      display: none; 
-    }
-  }
-
-  /* Ajuste para monitores ultra-anchos */
-  @media (min-width: 1800px) {
-    .hero-section { padding-left: 15%; }
-  }
-
- /* --- AJUSTE PARA MÓVIL --- */
-  @media (max-width: 768px) {
-    .hero-section {
-      /* Quitamos el parallax para que la imagen no desaparezca o se vea mal */
-      background-attachment: scroll !important; 
-      height: 60vh; /* Un poco más pequeña para pantallas verticales */
-      padding: 0 20px;
-    }
-    .hero-content h1 { font-size: 2.2rem; }
-  }
-</style>
