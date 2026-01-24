@@ -6,7 +6,7 @@
   box-shadow: 0 5px 6px -6px #bbb;
   z-index: 100;
 }
-@media (max-width: $container-width) {
+@media (max-width: 650px) {
   .site-header {
     min-height: 56px;
     width: 95vw;
@@ -45,7 +45,7 @@
   Responsiveness with a dropdown menu
 */
 
-@media (min-width: $container-width) {
+@media (min-width: $651px) {
   .dropbtn {
     display: none;
   }
@@ -53,7 +53,7 @@
     display: none;
   }
 }
-@media (max-width: $container-width) {
+@media (max-width: $650) {
   .menu-list {
     display: none;
   }
