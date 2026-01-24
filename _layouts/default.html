@@ -1,8 +1,7 @@
 <!doctype html>
 <html>
   {% include head.html %}
-  <body>
-    <div class="container">
+  <body class="{{ page.body_class }}"> <div class="container">
       {% include header.html %}
       <div class="content-wrapper">
         {{ content }}
