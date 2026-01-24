@@ -8,6 +8,15 @@
       </a>
     {% endif %}
   </div>
+  
+  <div class="hero-right-side">
+      <blockquote class="stravinsky-quote">
+        <p>"La música es una arquitectura de sonidos; es el orden del tiempo y del espacio."</p>
+        <footer>— Igor Stravinsky</footer>
+      </blockquote>
+    </div>
+  
+  </div>
 </section>
 
 <style>
@@ -64,6 +73,34 @@
     background: #e63e1f;
     transform: translateY(-3px); /* Efecto de flotado */
     box-shadow: 0 6px 20px rgba(255, 75, 43, 0.5);
+  }
+ /* Lado derecho y cita */
+.hero-right-side {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.stravinsky-quote {
+  text-align: right;
+  max-width: 350px;
+  border-right: 3px solid #ff4b2b;
+  padding-right: 20px;
+  margin: 0;
+}
+
+.stravinsky-quote p {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 8px;
+}
+
+.stravinsky-quote footer {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+  /* ESTO OCULTA LA CITA EN EL MÓVIL */
+  .hero-right-side {
+    display: none; 
   }
 
   /* Ajuste para monitores ultra-anchos */
