@@ -71,12 +71,13 @@
     .hero-section { padding-left: 15%; }
   }
 
-  /* Ajuste básico para que en móviles no se rompa nada */
+ /* --- AJUSTE PARA MÓVIL --- */
   @media (max-width: 768px) {
     .hero-section {
-      background-attachment: scroll; /* Evita tirones en móvil */
-      padding-left: 20px;
-      height: 70vh;
+      /* Quitamos el parallax para que la imagen no desaparezca o se vea mal */
+      background-attachment: scroll !important; 
+      height: 60vh; /* Un poco más pequeña para pantallas verticales */
+      padding: 0 20px;
     }
     .hero-content h1 { font-size: 2.2rem; }
   }
