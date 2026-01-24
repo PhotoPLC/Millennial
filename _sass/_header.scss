@@ -31,7 +31,7 @@
 
 .menu-list {
   line-height: $header-thickness;
-  float: none;
+  float: right;
   flex-wrap: nowrap; /* Evita que los botones se vayan abajo */
   display: flex;         /* Cambiamos a Flexbox para mejor control */
   padding-right: 10px;
