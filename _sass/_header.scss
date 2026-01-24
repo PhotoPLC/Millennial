@@ -20,20 +20,25 @@
   text-decoration: none;
 }
 .site-title {
-  font-size: 26px;
+  font-size: 20px;       /* Bajamos de 26px para ganar espacio horizontal */
   font-weight: 400;
   line-height: 56px;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0;
   padding-left: 10px;
   float: left;
+  white-space: nowrap;   /* IMPORTANTE: Evita que el título salte a dos líneas */
 }
+
 .menu-list {
   line-height: $header-thickness;
   float: right;
+  display: flex;         /* Cambiamos a Flexbox para mejor control */
+  padding-right: 10px;
 }
+
 .menu-link {
-  padding: 5px 10px;
+  padding: 5px 6px;      /* Bajamos de 10px a 6px laterales para compactar */
+  font-size: 14px;       /* Letra ligeramente más pequeña para laptops */
 }
 
 /*
