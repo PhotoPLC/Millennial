@@ -8,4 +8,4 @@ Nací en Pinoso (Alicante), un rincón donde la música se lleva prácticamente 
 
 Con el tiempo, las ganas de aprender me llevaron a salir de mi zona de confort para ingresar en el Conservatorio Profesional de Elda. Esos años fueron fundamentales para formarme, no solo como músico, sino como persona, aprendiendo la disciplina y el cariño que este instrumento requiere.
 
-Después de mucho estudio y dedicación, en 2025 logré dar el paso que tanto esperaba: empezar mis estudios superiores en el Conservatorio "Joaquín Rodrigo". Ahora mismo me encuentro en plena formación en este centro, disfrutando de cada reto y con la misma ilusión que aquel niño de 7 años que cogió su primera trompeta en Pinoso, pero con la mirada puesta en todo lo que está por venir en el mundo de la música.
+Después de mucho estudio y dedicación, en 2025 logré dar el paso que tanto esperaba: empezar mis estudios superiores. Ahora mismo me encuentro en plena formación en el Conservatorio "Joaquín Rodrigo"o, disfrutando de cada reto y con la misma ilusión que aquel niño de 7 años que cogió su primera trompeta en Pinoso, pero con la mirada puesta en todo lo que está por venir en el mundo de la música.
