@@ -1,94 +1,99 @@
+/* 1. Configuración del Header (Contenedor más pequeño y centrado) */
 .site-header {
   min-height: 56px;
-  width: $container-width;
+  width: 100%;             /* Se adapta a pantallas pequeñas */
+  max-width: 900px;        /* AJUSTA AQUÍ: Ancho máximo del menú */
+  margin: 0 auto;          /* Centra el menú en la pantalla */
+  
+  /* Centrado para position: fixed */
   position: fixed;
+  left: 0;
+  right: 0;
+
   background-color: white;
   box-shadow: 0 5px 6px -6px #bbb;
   z-index: 100;
-}
-@media (max-width: $container-width) {
-  .site-header {
-    min-height: 56px;
-    width: 95vw;
-    position: fixed;
-    background-color: white;
-    box-shadow: 0 5px 6px -6px #bbb;
-    z-index: 100;
-  }
-}
-.site-header a {
-  text-decoration: none;
-}
-.site-title {
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 56px;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-left: 10px;
-  float: left;
-}
-.menu-list {
-  line-height: $header-thickness;
-  float: right;
-}
-.menu-link {
-  padding: 5px 10px;
+
+  /* Flexbox: Alinea título y menú automáticamente */
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 0 20px;         /* Espacio en los bordes para que no pegue al cristal */
+  box-sizing: border-box;  /* Evita que el padding sume al ancho total */
 }
 
-/*
-  Responsiveness with a dropdown menu
+/* 2. Elementos internos (Sin floats para evitar errores) */
+.site-title {
+  font-size: 24px;         /* Un poco más pequeño para ganar espacio */
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+  white-space: nowrap;    /* Evita que el nombre del sitio se parta en dos líneas */
+}
+
+.menu-list {
+  display: flex;           /* Los enlaces también se alinean con flex */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-link {
+  padding: 5px 12px;       /* Espacio cómodo entre enlaces */
+  text-decoration: none;
+  color: black;
+}
+
+/* 3. RESPONSIVIDAD: El Menú Hamburguesa
+   Cambiamos a los 768px (Tablet vertical)
 */
 
-@media (min-width: $container-width) {
-  .dropbtn {
-    display: none;
-  }
-  .dropdown-content {
+/* Ocultar hamburguesa en pantallas grandes */
+@media (min-width: 769px) {
+  .dropbtn, .dropdown-content {
     display: none;
   }
 }
-@media (max-width: $container-width) {
+
+/* Mostrar hamburguesa y ocultar lista en pantallas pequeñas */
+@media (max-width: 768px) {
   .menu-list {
-    display: none;
+    display: none;         /* Esconde el menú horizontal */
   }
-  .site-title {
-    padding-right: 0.25rem;
-  }
+
   .dropbtn {
     background-color: white;
     color: black;
-    padding: 16px;
-    margin-top: 4px;
-    font-size: 16px;
+    padding: 10px;
+    font-size: 20px;       /* Tamaño del icono de hamburguesa o texto */
     border: none;
     cursor: pointer;
   }
+
   .dropdown {
     position: relative;
     display: inline-block;
   }
+
   .dropdown-content {
     display: none;
     position: absolute;
+    right: 0;              /* Se despliega hacia la izquierda desde el borde derecho */
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
+
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
-    text-decoration: none;
     display: block;
+    text-decoration: none;
   }
-  .dropdown-content a:hover {
-    background-color: #f1f1f1
-  }
+
+  /* Mostrar al pasar el ratón o tocar */
   .dropdown:hover .dropdown-content {
     display: block;
-  }
-  .dropdown:hover .dropbtn {
-    background-color: #f1f1f1;
   }
 }
