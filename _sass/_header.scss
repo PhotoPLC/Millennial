@@ -1,184 +1,137 @@
-/* 1. RESET Y BASE */
+/* =========================================
+   1. RESET Y BASE
+   ========================================= */
 * {
-  box-sizing: border-box; /* Esto evita que el padding empuje el menú fuera */
+  box-sizing: border-box;
 }
 
+/* Variables sugeridas (si no las tienes definidas arriba) */
+$header-height: 56px;
+$breakpoint: 750px; /* Usaremos este punto de ruptura unificado */
+
+/* =========================================
+   2. ESTRUCTURA PRINCIPAL DEL HEADER
+   ========================================= */
 .site-header {
-  min-height: 56px;
-  width: 100%;
+  min-height: $header-height;
+  width: 100%; /* Siempre ocupa todo el ancho de la pantalla */
   position: fixed;
   top: 0;
   left: 0;
   background-color: white;
   box-shadow: 0 5px 6px -6px #bbb;
   z-index: 100;
-  /* Eliminamos paddings de aquí para que no desborde */
+  border-bottom: 1px solid #e8e8e8; /* Opcional: borde sutil */
 }
 
-/* 2. EL CONTENEDOR (Esto mantendrá todo dentro de los límites) */
+/* El contenedor interior centra el contenido */
 .header-wrapper {
-  max-width: $container-width; /* Usa tu variable original */
+  max-width: $container-width; /* Tu variable original */
   margin: 0 auto;
-  padding: 0 20px; /* Margen de seguridad interno */
-  overflow: hidden; /* Corta cualquier cosa que intente salirse */
+  padding: 0 20px;
+  position: relative; /* Necesario para posicionar elementos internos */
+  /* ¡IMPORTANTE! Quitamos overflow: hidden para que se vea el dropdown */
 }
+
 .site-header a {
   text-decoration: none;
+  color: #424242;
 }
 
+/* =========================================
+   3. TÍTULO / LOGO
+   ========================================= */
 .site-title {
   font-size: 26px;
   font-weight: 400;
-  line-height: 56px;
+  line-height: $header-height;
   margin: 0;
   float: left;
-  padding-left: 15px;
-  color: #424242;
-  text-decoration: none;
+  padding-left: 0; /* Ajustado para alinear con el margen del wrapper */
 }
 
-/* 3. MODO ESCRITORIO */
-@media (min-width: 750px) {
+/* =========================================
+   4. NAVEGACIÓN Y MENÚS
+   ========================================= */
+
+/* --- Estilos Generales de Enlaces --- */
+.menu-link {
+  padding: 5px 10px;
+  line-height: $header-height;
+  display: inline-block;
+}
+
+/* --- MODO ESCRITORIO (Mayor que el breakpoint) --- */
+@media (min-width: $breakpoint) {
+  /* Mostrar lista normal */
   .menu-list {
-    line-height: 56px;
     float: right;
     margin: 0;
     display: block;
   }
-   .site-title {
-    padding-right: 0.30rem;
-  }
-
-  .menu-link {
-    padding: 5px 10px;
-    color: #424242;
-    text-decoration: none;
-  }
-  .dropdown { display: none; } /* Ocultar hamburguesa */
-}
-
-/* 4. MODO MÓVIL (Solo por debajo de 600px) */
-@media (max-width: 750px) {
-  .menu-list { display: none; } /* Esconder lista normal */
-
+  
+  /* Ocultar hamburguesa/dropdown */
   .dropdown {
-    float: right;
-  }
-
-  .dropbtn {
-    background-color: transparent;
-    color: black;
-    line-height: 56px;
-    padding: 0 10px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    right: 10px; /* Ajustado para que no se pegue al borde */
-    top: 50px;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
-    border: 1px solid #eee;
-  }
-.site-header {
-  min-height: 56px;
-  width: $container-width;
-  position: fixed;
-  background-color: white;
-  box-shadow: 0 5px 6px -6px #bbb;
-  z-index: 100;
-}
-@media (max-width: $container-width) {
-  .site-header {
-    min-height: 56px;
-    width: 95vw;
-    position: fixed;
-    background-color: white;
-    box-shadow: 0 5px 6px -6px #bbb;
-    z-index: 100;
-  }
-}
-.site-header a {
-  text-decoration: none;
-}
-.site-title {
-  font-size: 26px;
-  font-weight: 400;
-  line-height: 56px;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-left: 10px;
-  float: left;
-}
-.menu-list {
-  line-height: $header-thickness;
-  float: right;
-}
-.menu-link {
-  padding: 5px 10px;
-}
-
-/*
-  Responsiveness with a dropdown menu
-*/
-
-@media (min-width: $container-width) {
-  .dropbtn {
-    display: none;
-  }
-  .dropdown-content {
     display: none;
   }
 }
-@media (max-width: $container-width) {
+
+/* --- MODO MÓVIL (Menor que el breakpoint) --- */
+@media (max-width: $breakpoint) {
+  
+  /* Ocultar lista normal */
   .menu-list {
     display: none;
   }
-  .site-title {
-    padding-right: 0.25rem;
+
+  /* Mostrar contenedor del dropdown */
+  .dropdown {
+    float: right;
+    display: block;
+    position: relative; /* Para que el contenido absoluto se pegue aquí */
   }
+
+  /* Botón Hamburguesa */
   .dropbtn {
-    background-color: white;
-    color: black;
-    padding: 16px;
-    margin-top: 4px;
-    font-size: 16px;
+    background-color: transparent;
+    color: #424242;
+    line-height: $header-height;
+    padding: 0 10px;
+    font-size: 24px; /* Un poco más grande para tocar fácil */
     border: none;
     cursor: pointer;
+    margin: 0;
   }
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
+
+  /* El contenido del menú desplegable */
   .dropdown-content {
-    display: none;
+    display: none; /* Oculto por defecto */
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+    right: 0; /* Alineado a la derecha del botón */
+    top: $header-height; /* Justo debajo del header */
+    background-color: white;
+    min-width: 200px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 101;
+    border-radius: 0 0 4px 4px;
   }
+
+  /* Enlaces dentro del dropdown */
   .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 15px 20px;
     text-decoration: none;
     display: block;
+    border-bottom: 1px solid #f1f1f1;
   }
-  .dropdown-content a:hover {
-    background-color: #f1f1f1
-  }
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  .dropdown:hover .dropbtn {
-    background-color: #f1f1f1;
-  }
-}
 
-  .dropdown:hover .dropdown-content { display: block; }
+  .dropdown-content a:hover {
+    background-color: #f9f9f9;
+  }
+
+  /* Lógica para mostrar el menú (Hover en PC o Click simulado en móvil) */
+  .dropdown:hover .dropdown-content,
+  .dropdown:focus-within .dropdown-content { 
+    display: block; 
+  }
 }
