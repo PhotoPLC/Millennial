@@ -9,6 +9,11 @@
 $header-height: 56px;
 $breakpoint: 750px; /* Usaremos este punto de ruptura unificado */
 
+<header class="site-header" id="main-header">
+  <div class="header-wrapper">
+    </div>
+</header>
+
 /* =========================================
    2. ESTRUCTURA PRINCIPAL DEL HEADER
    ========================================= */
@@ -128,6 +133,51 @@ $breakpoint: 750px; /* Usaremos este punto de ruptura unificado */
   .dropdown-content a:hover {
     background-color: #f9f9f9;
   }
+   /* --- HEADER TRANSPARENTE INMERSIVO --- */
+
+/* 1. Header base (estado inicial transparente) */
+.site-header {
+  background-color: transparent !important; /* Forzamos transparencia */
+  box-shadow: none !important; /* Quitamos la sombra inicial */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  transition: all 0.4s ease; /* Suavidad al cambiar de color */
+}
+
+/* 2. Color del texto en modo transparente (Blanco para ver sobre la foto) */
+.site-header .site-title,
+.site-header .menu-link,
+.site-header .dropbtn {
+  color: white !important; 
+  text-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Sombra para leerlo bien */
+}
+
+.site-header .dropdown-content a {
+    color: #333 !important; /* El desplegable sí debe ser oscuro */
+}
+
+/* --- CLASE "SCROLLED" (Se activa con JS al bajar) --- */
+.site-header.scrolled {
+  background-color: rgba(255, 255, 255, 0.98) !important; /* Blanco casi opaco */
+  box-shadow: 0 5px 6px -6px #bbb !important; /* Vuelve la sombra */
+}
+
+/* Cambiamos el texto a negro cuando el fondo es blanco */
+.site-header.scrolled .site-title,
+.site-header.scrolled .menu-link,
+.site-header.scrolled .dropbtn {
+  color: #424242 !important;
+  text-shadow: none;
+}
+
+/* --- AJUSTE DEL HERO PARA QUE SUBA --- */
+/* Esto es clave: el hero debe ignorar el espacio del header */
+.hero-section {
+  height: 100vh; /* Pantalla completa real */
+  margin-top: 0 !important; 
+  padding-top: 0 !important;
+}
 
   /* Lógica para mostrar el menú (Hover en PC o Click simulado en móvil) */
   .dropdown:hover .dropdown-content,
