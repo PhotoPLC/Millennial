@@ -1,69 +1,68 @@
-/* 1. ESTILOS BASE (Comunes a toda la web) */
+/* 1. RESET Y BASE */
+* {
+  box-sizing: border-box; /* Esto evita que el padding empuje el menú fuera */
+}
+
 .site-header {
   min-height: 56px;
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   background-color: white;
   box-shadow: 0 5px 6px -6px #bbb;
   z-index: 100;
+  /* Eliminamos paddings de aquí para que no desborde */
 }
 
-.site-header a {
-  text-decoration: none;
+/* 2. EL CONTENEDOR (Esto mantendrá todo dentro de los límites) */
+.header-wrapper {
+  max-width: $container-width; /* Usa tu variable original */
+  margin: 0 auto;
+  padding: 0 20px; /* Margen de seguridad interno */
+  overflow: hidden; /* Corta cualquier cosa que intente salirse */
 }
 
 .site-title {
   font-size: 26px;
   font-weight: 400;
   line-height: 56px;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-left: 10px;
+  margin: 0;
   float: left;
   color: #424242;
+  text-decoration: none;
 }
 
-/* 2. MODO ESCRITORIO (Se mantiene hasta los 600px) */
+/* 3. MODO ESCRITORIO (Hasta los 600px para que tarde más) */
 @media (min-width: 601px) {
   .menu-list {
     line-height: 56px;
     float: right;
-    display: block !important; /* Forzamos que se vea */
+    margin: 0;
+    display: block;
   }
-
   .menu-link {
     padding: 5px 10px;
     color: #424242;
+    text-decoration: none;
   }
-
-  /* Ocultamos el botón de hamburguesa */
-  .dropbtn, .dropdown {
-    display: none;
-  }
+  .dropdown { display: none; } /* Ocultar hamburguesa */
 }
 
-/* 3. MODO MÓVIL (Solo aparece cuando la ventana es muy estrecha: < 600px) */
+/* 4. MODO MÓVIL (Solo por debajo de 600px) */
 @media (max-width: 600px) {
-  .menu-list {
-    display: none; /* Escondemos el menú horizontal */
-  }
-
-  .site-title {
-    font-size: 22px; /* Un pelín más pequeño para que quepa con el botón */
-  }
+  .menu-list { display: none; } /* Esconder lista normal */
 
   .dropdown {
     float: right;
-    position: relative;
-    display: inline-block;
   }
 
   .dropbtn {
-    background-color: white;
+    background-color: transparent;
     color: black;
-    padding: 0 15px;
-    line-height: 56px; /* Para que esté centrado igual que el título */
-    font-size: 16px;
+    line-height: 56px;
+    padding: 0 10px;
+    font-size: 20px;
     border: none;
     cursor: pointer;
   }
@@ -71,30 +70,20 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    right: 0;
-    top: 56px;
-    background-color: #f9f9f9;
+    right: 10px; /* Ajustado para que no se pegue al borde */
+    top: 50px;
+    background-color: white;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
   }
 
   .dropdown-content a {
-    color: black;
+    color: #424242;
     padding: 12px 16px;
-    text-decoration: none;
     display: block;
-    line-height: normal;
+    text-decoration: none;
   }
 
-  .dropdown-content a:hover { background-color: #f1f1f1; }
-  
-  /* El menú se abre al pasar el ratón (Hover) */
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
-    background-color: #f1f1f1;
-  }
+  .dropdown:hover .dropdown-content { display: block; }
 }
