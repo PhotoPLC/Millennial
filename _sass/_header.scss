@@ -50,7 +50,7 @@
 }
 
 /* 4. MODO MÓVIL (Solo por debajo de 600px) */
-@media (max-width: 600px) {
+@media (max-width: 750px) {
   .menu-list { display: none; } /* Esconder lista normal */
 
   .dropdown {
