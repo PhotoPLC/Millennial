@@ -1,84 +1,78 @@
-/* 1. Configuración del Header (Contenedor más pequeño y centrado) */
+/* 1. ESTILOS BASE (Comunes a toda la web) */
 .site-header {
   min-height: 56px;
-  width: 100%;             /* Se adapta a pantallas pequeñas */
-  max-width: 900px;        /* AJUSTA AQUÍ: Ancho máximo del menú */
-  margin: 0 auto;          /* Centra el menú en la pantalla */
-  
-  /* Centrado para position: fixed */
+  width: 100%;
   position: fixed;
-  left: 0;
-  right: 0;
-
   background-color: white;
   box-shadow: 0 5px 6px -6px #bbb;
   z-index: 100;
-
-  /* Flexbox: Alinea título y menú automáticamente */
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  padding: 0 20px;         /* Espacio en los bordes para que no pegue al cristal */
-  box-sizing: border-box;  /* Evita que el padding sume al ancho total */
 }
 
-/* 2. Elementos internos (Sin floats para evitar errores) */
+.site-header a {
+  text-decoration: none;
+}
+
 .site-title {
-  font-size: 24px;         /* Un poco más pequeño para ganar espacio */
+  font-size: 26px;
   font-weight: 400;
-  text-decoration: none;
-  color: black;
-  white-space: nowrap;    /* Evita que el nombre del sitio se parta en dos líneas */
+  line-height: 56px;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 10px;
+  float: left;
+  color: #424242;
 }
 
-.menu-list {
-  display: flex;           /* Los enlaces también se alinean con flex */
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+/* 2. MODO ESCRITORIO (Se mantiene hasta los 600px) */
+@media (min-width: 601px) {
+  .menu-list {
+    line-height: 56px;
+    float: right;
+    display: block !important; /* Forzamos que se vea */
+  }
 
-.menu-link {
-  padding: 5px 12px;       /* Espacio cómodo entre enlaces */
-  text-decoration: none;
-  color: black;
-}
+  .menu-link {
+    padding: 5px 10px;
+    color: #424242;
+  }
 
-/* 3. RESPONSIVIDAD: El Menú Hamburguesa
-   Cambiamos a los 768px (Tablet vertical)
-*/
-
-/* Ocultar hamburguesa en pantallas grandes */
-@media (min-width: 769px) {
-  .dropbtn, .dropdown-content {
+  /* Ocultamos el botón de hamburguesa */
+  .dropbtn, .dropdown {
     display: none;
   }
 }
 
-/* Mostrar hamburguesa y ocultar lista en pantallas pequeñas */
-@media (max-width: 768px) {
+/* 3. MODO MÓVIL (Solo aparece cuando la ventana es muy estrecha: < 600px) */
+@media (max-width: 600px) {
   .menu-list {
-    display: none;         /* Esconde el menú horizontal */
+    display: none; /* Escondemos el menú horizontal */
+  }
+
+  .site-title {
+    font-size: 22px; /* Un pelín más pequeño para que quepa con el botón */
+  }
+
+  .dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
   }
 
   .dropbtn {
     background-color: white;
     color: black;
-    padding: 10px;
-    font-size: 20px;       /* Tamaño del icono de hamburguesa o texto */
+    padding: 0 15px;
+    line-height: 56px; /* Para que esté centrado igual que el título */
+    font-size: 16px;
     border: none;
     cursor: pointer;
-  }
-
-  .dropdown {
-    position: relative;
-    display: inline-block;
   }
 
   .dropdown-content {
     display: none;
     position: absolute;
-    right: 0;              /* Se despliega hacia la izquierda desde el borde derecho */
+    right: 0;
+    top: 56px;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -88,12 +82,19 @@
   .dropdown-content a {
     color: black;
     padding: 12px 16px;
-    display: block;
     text-decoration: none;
+    display: block;
+    line-height: normal;
   }
 
-  /* Mostrar al pasar el ratón o tocar */
+  .dropdown-content a:hover { background-color: #f1f1f1; }
+  
+  /* El menú se abre al pasar el ratón (Hover) */
   .dropdown:hover .dropdown-content {
     display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #f1f1f1;
   }
 }
