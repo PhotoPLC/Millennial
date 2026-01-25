@@ -22,6 +22,9 @@
   padding: 0 20px; /* Margen de seguridad interno */
   overflow: hidden; /* Corta cualquier cosa que intente salirse */
 }
+.site-header a {
+  text-decoration: none;
+}
 
 .site-title {
   font-size: 26px;
