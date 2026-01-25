@@ -4,6 +4,8 @@ title: Sobre mí
 permalink: /about
 ---
 
-Soy de Pinoso, un pueblo de Alicante donde la música se vive de forma muy especial. Mi camino con la trompeta empezó casi como un juego cuando solo tenía 7 años, dando mis primeros pasos en la escuela de la Sociedad Unión Lírica Pinosense. Lo que empezó en las aulas de mi pueblo me llevó poco a poco a tomármelo más en serio, lo que me hizo ingresar más tarde en el Conservatorio Profesional de Elda para seguir creciendo como músico.
+Nací en Pinoso (Alicante), un rincón donde la música se lleva prácticamente en el ADN. Mi aventura con la trompeta comenzó cuando apenas levantaba un palmo del suelo: con solo 7 años ya estaba dando mis primeras notas en la escuela de la Sociedad Unión Lírica Pinosense. Lo que en aquel momento empezó como una actividad extraescolar y un juego, terminó convirtiéndose en mi gran pasión.
 
-Tras esos años de formación y mucho esfuerzo, en 2025 he comenzado una etapa clave en mi carrera: mis estudios superiores en el Conservatorio "Joaquín Rodrigo". Ahora mismo estoy volcado en este nuevo reto, disfrutando de la música y aprendiendo cada día en uno de los centros de referencia.
+Con el tiempo, las ganas de aprender me llevaron a salir de mi zona de confort para ingresar en el Conservatorio Profesional de Elda. Esos años fueron fundamentales para formarme, no solo como músico, sino como persona, aprendiendo la disciplina y el cariño que este instrumento requiere.
+
+Después de mucho estudio y dedicación, en 2025 logré dar el paso que tanto esperaba: empezar mis estudios superiores en el Conservatorio "Joaquín Rodrigo". Ahora mismo me encuentro en plena formación en este centro, disfrutando de cada reto y con la misma ilusión que aquel niño de 7 años que cogió su primera trompeta en Pinoso, pero con la mirada puesta en todo lo que está por venir en el mundo de la música.
