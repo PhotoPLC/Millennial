@@ -2,9 +2,14 @@
   <h3 class="site-title">
     <a href="{{ site.github.url }}/">{{ site.title }}</a>
   </h3>
+
   <nav class="menu-list">
     {% for item in site.data.settings.menu %}
-      <a href="{{ site.github.url }}/{{ item.url }}" class="menu-link" data-umami-event="nav-{{ item.name }}">{{ item.name }}</a>
+      <a href="{{ site.github.url }}/{{ item.url }}" 
+         class="menu-link {% if page.url contains item.url %}active{% endif %}" 
+         data-umami-event="nav-{{ item.name }}">
+         {{ item.name }}
+      </a>
     {% endfor %}
     
     {% for item in site.data.settings.social %}
