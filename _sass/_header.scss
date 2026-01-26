@@ -59,6 +59,10 @@ $breakpoint: 750px; /* Usaremos este punto de ruptura unificado */
   font-size: 22px;
   color: #424242;
 }
+.site-title a:hover {
+  background-color: #b4945c; /* Se rellena al pasar el mouse */
+  color: white !important;
+}
 
 /* =========================================
    4. NAVEGACIÓN Y MENÚS
