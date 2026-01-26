@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mi primer post"
-date: 2026-01-13
+date: 2025-01-13
 author: "Pedro López"
 categories: documentation
 tags: [documentation,sample]
