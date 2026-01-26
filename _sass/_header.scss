@@ -71,8 +71,31 @@ $breakpoint: 750px; /* Usaremos este punto de ruptura unificado */
 /* --- Estilos Generales de Enlaces --- */
 .menu-link {
   padding: 5px 10px;
+  color: #424242;
   line-height: $header-height;
   display: inline-block;
+  transition: color 0.3s ease;
+  position: relative;
+}
+/* Efecto al pasar el ratón */
+.menu-link:hover {
+  color: $gold-color !important;
+}
+/* Página actual (Estado Activo) */
+.menu-link.active {
+  color: $gold-color !important;
+  font-weight: 600;
+}
+
+/* Opcional: Una rayita debajo si está activo */
+.menu-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: 15px; /* Ajusta según tu header-height */
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background-color: $gold-color;
 }
 
 /* --- MODO ESCRITORIO (Mayor que el breakpoint) --- */
