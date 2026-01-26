@@ -9,10 +9,6 @@
 $header-height: 56px;
 $breakpoint: 750px; /* Usaremos este punto de ruptura unificado */
 
-<header class="site-header" id="main-header">
-  <div class="header-wrapper">
-    </div>
-</header>
 /* =========================================
    2. ESTRUCTURA PRINCIPAL DEL HEADER
    ========================================= */
@@ -131,5 +127,11 @@ $breakpoint: 750px; /* Usaremos este punto de ruptura unificado */
 
   .dropdown-content a:hover {
     background-color: #f9f9f9;
+  }
+
+  /* Lógica para mostrar el menú (Hover en PC o Click simulado en móvil) */
+  .dropdown:hover .dropdown-content,
+  .dropdown:focus-within .dropdown-content { 
+    display: block; 
   }
 }
