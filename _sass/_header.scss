@@ -49,6 +49,16 @@ $breakpoint: 750px; /* Usaremos este punto de ruptura unificado */
   float: left;
   padding-left: 40px; /* Ajustado para alinear con el margen del wrapper */
 }
+.site-title a {
+  display: inline-block;
+  border: 1.5px solid #b4945c; /* Borde dorado fino */
+  padding: 5px 15px;
+  line-height: normal; /* Para que no herede el alto del header */
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  font-size: 22px;
+  color: #424242;
+}
 
 /* =========================================
    4. NAVEGACIÓN Y MENÚS
