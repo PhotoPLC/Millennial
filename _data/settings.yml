@@ -8,10 +8,10 @@ google-ID: ''
 
 menu:
 - {name: 'Proyectos',  url: 'proyectos'}
-#- {name: 'Biblioteca', url: 'biblioteca'}
-- {name: 'Portafolio',       url: 'galeria'}
-# - {name: 'Documentos',      url: 'documentation'}
 - {name: 'Biografía',              url: 'about'}
+#- {name: 'Biblioteca', url: 'biblioteca'}
+- {name: 'Media',       url: 'galeria'}
+# - {name: 'Documentos',      url: 'documentation'}
 - {name: 'Contacto',            url: 'contact'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
