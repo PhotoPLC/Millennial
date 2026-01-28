@@ -55,7 +55,7 @@ $gold-color: #b4945c;
   padding: 5px 15px;
   line-height: normal; /* Para que no herede el alto del header */
   border-radius: 2px;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
   font-size: 22px;
   color: #424242;
 }
@@ -74,7 +74,7 @@ $gold-color: #b4945c;
   color: #424242;
   line-height: $header-height;
   display: inline-block;
-  transition: color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
   position: relative;
 }
 /* Efecto al pasar el ratón */
