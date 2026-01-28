@@ -74,30 +74,40 @@ $gold-color: #b4945c;
   color: #424242;
   line-height: $header-height;
   display: inline-block;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: color 0.3s ease;
   position: relative;
-}
-/* Efecto al pasar el ratón */
-.menu-link:hover {
-  color: $gold-color !important;
-}
-/* Página actual (Estado Activo) */
-.menu-link.active {
-  color: $gold-color !important;
-  font-weight: 600;
+  text-decoration: none;
 }
 
-/* Opcional: Una rayita debajo si está activo */
-.menu-link.active::after {
+.menu-link:hover, .menu-link.active {
+  color: $gold-color !important;
+}
+
+/* Rayita dorada optimizada (Se ve igual, carga más rápido) */
+.menu-link::after {
   content: '';
   position: absolute;
-  bottom: 15px; /* Ajusta según tu header-height */
+  bottom: 15px; 
   left: 10px;
   right: 10px;
   height: 2px;
   background-color: $gold-color;
+  
+  /* Optimizamos la aparición */
+  transform: scaleX(0);
+  transition: transform 0.25s ease-out;
+  will-change: transform;
 }
 
+/* Se muestra cuando está activo o en hover */
+.menu-link.active::after,
+.menu-link:hover::after {
+  transform: scaleX(1);
+}
+
+.menu-link.active {
+  font-weight: 600;
+}
 /* --- MODO ESCRITORIO (Mayor que el breakpoint) --- */
 @media (min-width: $breakpoint) {
   /* Mostrar lista normal */
