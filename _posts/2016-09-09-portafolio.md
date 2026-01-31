@@ -12,5 +12,6 @@ image1: music4.jpg
 <div class="featured-image"> 
 <img src="https://pedro.lopezcarrillo.com/assets/img/music3.jpg">
   <img src="https://pedro.lopezcarrillo.com/assets/img/music4.jpg">
+    <img src="https://pedro.lopezcarrillo.com/assets/img/sonology.gif">
 
 </div> 
