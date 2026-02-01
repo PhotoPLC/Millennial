@@ -10,7 +10,8 @@ image: music3.jpg
 
 ## Mis próximos proyectos
 
-Aquí podrás ver en qué estoy trabajando actualmente. Mi idea es seguir explorando nuevas formas grabación y compartir los resultados muy pronto.
+Aquí podrás ver en qué estoy trabajando actualmente. Mi idea es seguir explorando nuevas formas de grabación y compartir los resultados muy pronto.
 
 ¡Echa un vistazo de vez en cuando para no perderte las novedades!
 
+{% include spline-embed.html url="https://my.spline.design/verticallayoutaccordioncopycopy-5q0FCvuJNNz73aulr8VTjhqM-Ep1/" %}
