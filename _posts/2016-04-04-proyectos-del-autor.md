@@ -14,4 +14,4 @@ Aquí podrás ver en qué estoy trabajando actualmente. Mi idea es seguir explor
 
 ¡Echa un vistazo de vez en cuando para no perderte las novedades!
 
-{% include spline-embed.html url="https://my.spline.design/verticallayoutaccordioncopycopy-5q0FCvuJNNz73aulr8VTjhqM-Ep1/" %}
+{% include spline-embed.html url="https://my.spline.design/verticallayoutaccordioncopycopy-p1ZvKgN6iMgqaCSlf6ekvgcZ-gZw/" %}
