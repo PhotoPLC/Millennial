@@ -14,6 +14,6 @@ image1: music4.jpg
    <img src="https://pedro.lopezcarrillo.com/assets/img/music4.jpg">
       <img src="https://pedro.lopezcarrillo.com/assets/img/sonology-ezgif.com-gif-to-webp-converter.webp">
 
-     {% include spline-embed.html url="https://my.spline.design/verticallayoutaccordioncopycopy-htIYzxYqXyuO3XUXWWDuu55e-Uc9//scene.splinecode" %}
+     {% include spline-embed.html url="https://prod.spline.design/htIYzxYqXyuO3XUXWWDuu55e-Uc9/scene.splinecode" %}
 
 </div> 
