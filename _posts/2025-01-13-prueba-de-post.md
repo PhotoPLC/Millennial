@@ -5,7 +5,7 @@ date: 2026-01-13
 author: "Pedro López"
 categories: documentation
 tags: [documentation,sample]
-image: max.gif
+image: max4.gif
 ---
 # Bienvenidos a mi Blog
 
