@@ -1,12 +1,13 @@
 <head>
   <title>
-  {% if page.url == "/" or page.url == "/index.html" %}
-    Pedro López | Músico y Trompetista profesional
-  {% else %}
-    {{ page.title }} | Pedro López
-  {% endif %}
-</title>
-<meta name="google-site-verification" content="FNmua_leEnAiMq-iEERAfyWuCzuYLyXVLnFPdRJfJGY" />
+    {% if page.url == "/" or page.url == "/index.html" %}
+      Pedro López | Músico y Trompetista profesional
+    {% else %}
+      {{ page.title }} | Pedro López
+    {% endif %}
+  </title>
+
+  <meta name="google-site-verification" content="FNmua_leEnAiMq-iEERAfyWuCzuYLyXVLnFPdRJfJGY" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
 
@@ -15,10 +16,22 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cloud.umami.is">
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro&display=swap">
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro&display=swap" 
+        media="print" 
+        onload="this.media='all'; this.onload=null;">
+
+  <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" 
+        media="print" 
+        onload="this.media='all'; this.onload=null;">
+
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  </noscript>
 
   {% if page.math %}
   <script type="text/javascript" async
