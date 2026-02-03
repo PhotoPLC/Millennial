@@ -3,7 +3,7 @@ layout: post
 title: "Mi primer post"
 date: 2026-01-13
 author: "Pedro López"
-categories: documentation
+categories: facts
 tags: [documentation,sample]
 image: max4.gif
 ---
