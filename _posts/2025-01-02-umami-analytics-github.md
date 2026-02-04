@@ -51,3 +51,4 @@ Así es como quedó mi código final:
   data-website-id="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
   data-host-url="https://cloud.umami.is">
 </script>
+```
