@@ -44,11 +44,21 @@ Lo más importante fue asegurarme de que, incluso si el firewall decide bloquear
 
 Modifiqué mi archivo `_includes/head.html` (o donde tengas tus scripts) para añadir el atributo `defer`. Esto le dice al navegador: *"Sigue pintando la web, accede este script ubicado dentro de assets (o cualquier carpeta) y ejecútalo "*.
 
-Así es como quedó mi código final:
+Aquí tienes cómo configurarlo en tu _includes/head.html::
 
-```<script defer 
-  src="{{ site.github.url }}/assets/script.js" 
+```html
+<script defer 
+  src="{ { site.github.url } }/assets/script.js" 
   data-website-id="xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
-  data-host-url="https://cloud.umami.is">
+  data-host-url="[https://cloud.umami.is](https://cloud.umami.is)">
 </script>
 ```
+La solución definitiva: "Hostear" el script tú mismo
+Si el WiFi escolar bloquea cualquier conexión externa a umami.is, la solución es traerse el script a casa. En lugar de llamar al servidor de Umami para descargar el JS, lo guardamos en nuestra propia carpeta de /assets/ en Jekyll.
+
+Así, para el firewall, tu web solo está cargando un archivo Javascript propio, lo cual es totalmente "legal".
+
+### ¿Qué está pasando aquí?
+`src="{ { site.github.url } }/assets/script.js"`: Estamos cargando el script desde nuestra propia estructura de archivos en GitHub Pages. No hay peticiones externas sospechosas al inicio.
+
+`data-host-url="https://cloud.umami.is"`: Como el script ahora se ejecuta desde nuestro dominio, necesitamos decirle a dónde debe enviar los datos recopilados. Esta línea le indica que el "cerebro" sigue siendo el servidor de Umami.
