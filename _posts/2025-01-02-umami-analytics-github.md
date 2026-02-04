@@ -62,3 +62,7 @@ Así, para el firewall, tu web solo está cargando un archivo Javascript propio,
 `src="{ { site.github.url } }/assets/script.js"`: Estamos cargando el script desde nuestra propia estructura de archivos en GitHub Pages. No hay peticiones externas sospechosas al inicio.
 
 `data-host-url="https://cloud.umami.is"`: Como el script ahora se ejecuta desde nuestro dominio, necesitamos decirle a dónde debe enviar los datos recopilados. Esta línea le indica que el "cerebro" sigue siendo el servidor de Umami.
+
+"Optimizar una web para entornos restrictivos me ha enseñado que el rendimiento no solo depende de nuestro código, sino de cómo este interactúa con el mundo real. Con este ajuste, el lag de 4 segundos es cosa del pasado.
+
+¡Gracias por leer!"
