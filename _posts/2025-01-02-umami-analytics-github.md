@@ -3,7 +3,7 @@ layout: post
 title: "Umami Analytics"
 date: 2026-01-13
 author: "Pedro López"
-categories: documentation
+categories: facts
 tags: [documentation,sample]
 image: umami2.jpg
 description: "Cómo solucioné el bloqueo de Umami Analytics debido al firewall educativo usando Jekyll."
