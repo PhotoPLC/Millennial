@@ -10,7 +10,7 @@ image: max4.gif
 # Bienvenidos a mi Blog
 
 <p style="text-align: justify;">
-<p> Dicen que el mundo no está hecho de átomos, sino de vibraciones. A mis 20 años, no sé si es una verdad absoluta, pero es mi realidad diaria. Mi carrera ahora mismo es el estudio de esas frecuencias: desde el aire que muevo al soplar mi trompeta hasta la señal que intento domar en una interfaz de audio. </p>
+<p> Dicen que el mundo no está hecho de átomos, sino de vibraciones. A mis 20 años, no sé si es una verdad absoluta, pero es mi realidad diaria. Mi carrera ahora mismo es el estudio de esas frecuencias; desde el aire que muevo al soplar de mi interior hasta la señal que intento domar en una interfaz de audio. </p>
 
 <p> No soy un ingeniero con años de experiencia ni tengo el camino resuelto. Soy alguien que está en medio de la carrera, descubriendo que capturar un sonido es mucho más que pulsar "record" (grabar). Para mí, trabajar el audio es como tocar la trompeta: si no hay aire no hay sonido, si te pasas de presión todo satura y, si no escuchas lo que hay alrededor, terminas desafinando. </p>
 
