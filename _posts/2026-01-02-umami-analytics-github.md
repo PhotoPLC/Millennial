@@ -9,7 +9,7 @@ image: umami2.jpg
 description: "Cómo solucioné el bloqueo de Umami Analytics debido al firewall educativo usando Jekyll."
 ---
 
-
+# Solución de Implementación de Umami Analytics 
 
 ¿Alguna vez has notado que tu web carga instantáneamente en casa, pero al abrirla en la escuela o la oficina parece que ha vuelto a la época del módem?
 
